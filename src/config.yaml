@@ -1,0 +1,32 @@
+file_path: './data/bmarket.db'
+table_name: 'bank_marketing'
+target_label: 'Subscription Status'
+test_size: 0.2
+random_state: 42
+
+impute_features:
+  - Credit Default
+  - Housing Loan
+  - Personal Loan
+numerical_features:
+  - Age
+  - Campaign Calls
+ordinal_features:
+  - Education Level
+nominal_features:
+  - Occupation
+  - Marital Status
+passthrough_features:
+  - Contact Method
+  - Contact Made
+
+education_ranking:
+  [
+    'illiterate',
+    'basic.4y',
+    'basic.6y',
+    'basic.9y',
+    'high.school',
+    'professional.course',
+    'university.degree',
+  ]
